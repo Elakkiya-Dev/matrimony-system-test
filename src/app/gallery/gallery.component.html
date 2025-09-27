@@ -1,0 +1,11 @@
+<div class="position-relative">
+    <div class="gallery-count">{{currentIndex}} / {{images.length}}</div>
+    <div #swiperEl class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let img of images">
+                <img [src]="img" alt="gallery image"/>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>

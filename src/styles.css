@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+html, body, #root, app-root { 
+    height: 100%; 
+}
+body { 
+    font-family: Inter, 
+    system-ui, -apple-system, 
+    'Segoe UI', Roboto, 
+    'Helvetica Neue', 
+    Arial; background: #f7f8fb; 
+}
+.container-app { 
+    max-width: 920px; 
+    margin: 24px auto; 
+}
+.header-card { 
+    background: linear-gradient(135deg,#5b8def,#8e6ff5); 
+    color: white; 
+    border-radius: 12px; 
+    padding: 18px; 
+    box-shadow: 0 8px 30px rgba(67,56,202,0.08); 
+}
+.section-card { 
+    background: white; 
+    border-radius: 12px; 
+    padding: 16px; 
+    margin-top: 18px; 
+    box-shadow: 0 6px 18px rgba(22,22,39,0.04); 
+}
+/* gallery styles */
+.gallery-count { 
+    position: absolute; 
+    right: 12px; 
+    top: 12px;
+    background: rgba(18, 89, 229,0.45); /*(18, 70, 172,0.45)*/
+    color: #fff; 
+    z-index: 99;
+    padding: 6px 10px; 
+    border-radius: 20px; 
+    font-weight: 600; 
+}
+.swiper { 
+    width: 100%; 
+    height: 320px; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+.swiper-slide img { 
+    width: 100%; 
+    height: 50%; 
+    object-fit: cover; 
+}
+
+/* audio styles */
+.wave-canvas { 
+    width: 100%; 
+    height: 80px; 
+    background: linear-gradient(180deg,#f4f6fb,#ffffff); 
+    border-radius: 8px; 
+}
+.record-btn { 
+    width: 100%; 
+}
+.small-muted { 
+    font-size: 13px; 
+    color: #6b7280; 
+}

@@ -1,0 +1,19 @@
+
+<div class="recorder-container">
+  <div class="waveform-container">
+    <canvas #waveCanvas width="300" height="100"></canvas>
+    <img src="../../assets/img/voice.png" alt="Recorder Icon" class="mic-icon" />
+  </div>
+
+  <div *ngIf="isRecording || isRecorded">
+    {{ elapsed }} / {{ maxTime }} s
+  </div>
+
+  <div class="controls">
+    <button type="button" class="btn btn-primary" *ngIf="!isRecording && !isRecorded" (click)="startRecording()">Tap to start recording</button>
+    <button type="button" class="btn btn-primary" *ngIf="isRecorded" (click)="playAudio()">Tap to play</button>
+    <button type="button" class="btn btn-primary" *ngIf="isRecorded" (click)="cancelRecording()">Cancel</button>
+  </div>
+</div>
+
+
