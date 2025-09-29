@@ -41,7 +41,7 @@ export class AudioRecorderComponent implements OnDestroy {
     this.analyser = this.audioContext.createAnalyser();
     this.analyser.fftSize = 2048;
     this.bufferLength = this.analyser.fftSize;
-    this.dataArray = new Uint8Array(this.bufferLength);
+    this.dataArray = new Uint8Array(this.bufferLength) as Uint8Array;
 
     // connect
     source.connect(this.analyser);
